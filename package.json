@@ -1,25 +1,23 @@
 {
-  "name": "ast",
+  "name": "mini-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "acli": "./bin/acli.js"
+  },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.12.17",
-    "@babel/generator": "^7.12.17",
-    "@babel/parser": "^7.12.17",
-    "@babel/traverse": "^7.12.17",
-    "@babel/types": "^7.12.17",
-    "babel": "^6.23.0",
-    "uuid": "^8.3.2"
-  },
   "devDependencies": {
-    "webpack-cli": "^4.5.0",
-    "webpack": "^5.23.0"
+    "@babel/generator": "^7.14.1",
+    "@babel/parser": "^7.14.1",
+    "@babel/traverse": "^7.14.0",
+    "ejs": "^3.1.6"
+  },
+  "dependencies": {
+    "tapable": "^2.2.0"
   }
 }
